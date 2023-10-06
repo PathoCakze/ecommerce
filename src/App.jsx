@@ -1,12 +1,19 @@
 import Navbar from './components/Navbar'
-import ProductCard from './components/utils/ProductCard'
+import Routing from './routes/Routing'
+import Homeview from './views/Homeview'
+import { BrowserRouter } from "react-router-dom"
+
 
 function App() {
   return (
-    <>
-    <Navbar />
-    <ProductCard />
-    </>
+
+    <BrowserRouter>
+      <Navbar />
+      <main>
+        <Routing />
+      </main>
+    </BrowserRouter>
+
   )
 }
 
